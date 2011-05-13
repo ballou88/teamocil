@@ -45,7 +45,7 @@ module Teamocil
 
       end
 
-      output << "tmux select-pane -t 0"
+      output << "tmux select-window -t 1" << "tmux select-pane -t 0"
     end # }}}
 
     def execute_commands(commands) # {{{
